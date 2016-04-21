@@ -5,7 +5,7 @@
         jar="/home/andreas/AndroidStudioProjects/ananas/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="95fabe9ebedacda11a173b5ad67c57f787c1e0dd">
+        sha1="92f0a359ae05b9935582c6ffe03a9b53ebc078da">
         <dex dex="/home/andreas/AndroidStudioProjects/ananas/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_547dd5428ac3b30ea16d5c20ed8764b824aa0f3c.jar" />
     </item>
     <item
@@ -19,7 +19,7 @@
         jar="/home/andreas/AndroidStudioProjects/ananas/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="ef5f8dbeb3e64e941fe8561efd12a3f60ee496e2">
+        sha1="e3e28211362c12b1751201d30291d9e8d1133c14">
         <dex dex="/home/andreas/AndroidStudioProjects/ananas/app/build/intermediates/pre-dexed/debug/instant-run_8bb8850bf0b925d10fd84ed3c3e58d6e3750bd5c.jar" />
     </item>
     <item
