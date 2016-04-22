@@ -18,6 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Readtext" />
+        <activity android:name=".list" />
+        <activity android:name=".list2"></activity>
     </application>
 
 </manifest>

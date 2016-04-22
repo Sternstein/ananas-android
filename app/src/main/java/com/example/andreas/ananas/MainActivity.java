@@ -24,8 +24,12 @@ public class MainActivity extends AppCompatActivity {
         ListView lvMain = (ListView) findViewById(R.id.listView);
 
         // создаем адаптер
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        //        R.layout.mystyle, R.id.label, names);
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, names);
+                R.layout.mystyle, R.id.label, names);
+
 
         // присваиваем адаптер списку
         lvMain.setAdapter(adapter);
@@ -40,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
                 if(strText.equalsIgnoreCase(getResources().getString(R.string.test))) {
 
                     startActivity(new Intent(getApplicationContext(), Readtext.class));
+                }
+
+                if(strText.equalsIgnoreCase(getResources().getString(R.string.test2))) {
+
+                    startActivity(new Intent(getApplicationContext(), list.class));
                 }
             }
         });
