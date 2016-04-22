@@ -12,9 +12,10 @@
     <ImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
-        android:layout_height="400px"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:background="#f0b906" >
+        android:background="#f0b906"
+        android:src="@drawable/ver">
     </ImageView>
 
     <TextView
