@@ -1,5 +1,6 @@
 package com.example.andreas.ananas;
 
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 public class list2 extends AppCompatActivity {
     TextView tRead;
@@ -27,7 +30,7 @@ public class list2 extends AppCompatActivity {
         TextView Zag = (TextView) findViewById(R.id.label);
         TextView tRead = (TextView) findViewById(R.id.label2);
         Zag.setText("Хаччипури - самый вкусный продукт!");
-        ImageView imV = (ImageView) findViewById(R.id.iView);
+        ImageView imV = (ImageView) findViewById(R.id.icon);
 
         tRead.setText(" Повседневная практика показывает, что новая модель организационной деятельности играет важную роль в формировании дальнейших направлений развития. Равным образом начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа форм развития.\n" +
                 "\n" +
@@ -41,9 +44,8 @@ public class list2 extends AppCompatActivity {
                 "\n" +
                 "Не следует, однако забывать, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. ");
 
-        //url="192.168.1.7/site/res/img/logo2.png";
-       // ImageLoadTask x = new ImageLoadTask(url, imV);
-       // x.execute();
+        url="http://thumb1.shutterstock.com/display_pic_with_logo/2489353/291791864/stock-vector-free-free-badge-free-tag-free-button-vector-291791864.jpg";
+        Picasso.with(this).load(url).into(imV);
 
     }
 }
