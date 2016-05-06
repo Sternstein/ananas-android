@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(Void... params) {
             // получаем данные с внешнего ресурса
             try {
-                URL url = new URL("http://192.168.1.7/site/4.json");
+                URL url = new URL("http://192.168.1.7/site/5.json");
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
                 urlConnection.connect();
@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                     titleb[i]=title;
                     bodyb[i]=body;
                     picb[i]=pic;
+                    Picasso.with(MainActivity.this).load(pic);
 
 
                 }
