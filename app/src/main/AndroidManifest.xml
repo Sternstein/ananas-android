@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".Readtext" />
         <activity android:name=".list" />
-        <activity android:name=".list2"></activity>
+        <activity android:name=".list2" />
+        <activity android:name=".menu"></activity>
     </application>
 
 </manifest>
