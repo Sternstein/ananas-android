@@ -29,12 +29,7 @@ import com.squareup.picasso.Picasso;
 public class MainActivity extends AppCompatActivity {
     public static String LOG_TAG = "my_log";
     int leng;
-    String[] titleb;
-    String[] bodyb;
-    String[] picb;
 
-    TextView tV;
-    ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,10 +95,20 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(LOG_TAG, "Title Massive " + titleb);
                 Log.d(LOG_TAG, "Body Massive: " + bodyb);
                 Log.d(LOG_TAG, "Url Massive: " + picb);
+
+                Intent intent = new Intent(MainActivity.this, menu.class);
+                Bundle ka = new Bundle();
+                ka.putStringArray ("tit",titleb);
+                ka.putStringArray ("bod",bodyb);
+                ka.putStringArray ("pic",picb);
+                intent.putExtras(ka);
+                startActivity(intent);
             } catch (JSONException e) {
                 e.printStackTrace();
-                
+
             }
+
+
         }
     }
 }
