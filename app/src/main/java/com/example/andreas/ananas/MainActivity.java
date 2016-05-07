@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(Void... params) {
             // получаем данные с внешнего ресурса
             try {
-                URL url = new URL("http://192.168.1.7/site/5.json");
+                URL url = new URL("http://www.json-generator.com/api/json/get/coFpmWLRLm?indent=2");
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
                 urlConnection.connect();
@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 dataJsonObj = new JSONObject(strJson);
                 JSONArray info = dataJsonObj.getJSONArray("info");
                 leng =info.length();
+                String c =String.valueOf(leng);
                 String[] titleb= new String[leng];
                 String[] bodyb= new String[leng];
                 String[] picb= new String[leng];
@@ -98,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(LOG_TAG, "Url Massive: " + picb);
 
                 Intent intent = new Intent(MainActivity.this, menu.class);
+                intent.putExtra("c",c);
                 Bundle ka = new Bundle();
                 ka.putStringArray ("tit",titleb);
                 ka.putStringArray ("bod",bodyb);
