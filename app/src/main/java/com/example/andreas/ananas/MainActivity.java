@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                     titleb[i]=title;
                     bodyb[i]=body;
                     picb[i]=pic;
-                    Picasso.with(MainActivity.this).load(pic);
+                    Picasso.with(MainActivity.this).load(pic).fetch();
 
 
                 }
