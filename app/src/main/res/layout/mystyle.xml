@@ -2,16 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+    android:weightSum="1">
 
     <ImageView
         android:id="@+id/icon"
         android:layout_width="200px"
-        android:layout_height="200px"
+        android:layout_height="104dp"
         android:layout_marginLeft="4px"
         android:layout_marginRight="10px"
         android:layout_marginTop="4px"
-        android:src="@drawable/bane" >
+        android:src="@drawable/bane"
+        android:layout_weight="13.75">
     </ImageView>
 
     <TextView
@@ -25,8 +27,6 @@
         android:text="BIG Text"
         android:textSize="60px" >
     </TextView>
-
-
 
 
 </LinearLayout>
